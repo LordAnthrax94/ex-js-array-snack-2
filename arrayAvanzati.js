@@ -101,12 +101,13 @@ console.log(fullPricedBook);
 
 const authors = books.map(book => book.author)
 
-console.log(authors );
+console.log(authors);
 
-
-const areAuthorsAdults = authors.every(author => author.age > 18)
+const areAuthorsAdults = authors.every(author => author.age >= 18)
 
 console.log(areAuthorsAdults);
+
+authors.sort((a, b)=> b.age - a.age)
 
 
 // Snack 4 - Calcola l’età media
